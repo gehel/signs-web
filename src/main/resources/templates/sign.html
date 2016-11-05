@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" ng-app="signs"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout">
+<head>
+    <title>Signs</title>
+</head>
+<body>
+<div layout:fragment="content">
+
+    <div class="row">
+        <div class="col-sm-12">
+            <img class="img-thumbnail" th:src="@{/img/{color}(color=${sign.image})}" th:alt="${sign.name}"/>
+            <h2 th:text="${sign.name}">Name</h2>
+            <div th:text="${sign.description}">Description</div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

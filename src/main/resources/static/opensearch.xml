@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+	<ShortName>Signs</ShortName>
+	<Description>Search signs</Description>
+	<InputEncoding>UTF-8</InputEncoding>
+	<Url method="get" type="text/html"
+	     template="http://localhost/?q={searchTerms}"/>
+	<Url method="get" type="application/atom+xml"
+	     template="http://localhost/?q={searchTerms}&amp;format=atom"/>
+	<Url method="get" type="application/json"
+	     template="http://localhost/?q={searchTerms}&amp;format=json"/>
+</OpenSearchDescription>

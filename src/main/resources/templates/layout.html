@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}" />
+    <link rel="search" th:href="@{/opensearch.xml}" title="sings" type="application/opensearchdescription+xml" />
+</head>
+<body>
+<div class="container">
+    <div class="page-header">
+        <h1>Signs</h1>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-9">
+
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <form class="form-inline" th:action="@{/}" method="get">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" id="q" name="q"
+                                           placeholder="Search for..." th:attr="value=${query}" />
+                                </div>
+                                <button type="submit" class="btn btn-default" th:text="Go"/>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12" layout:fragment="content" >
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <h2>Categories</h2>
+
+            <h2>Admin</h2>
+            <div class="list-group">
+                <a class="list-group-item" th:href="@{/configprops}">configprops</a>
+                <a class="list-group-item" th:href="@{/mappings}">mappings</a>
+                <a class="list-group-item" th:href="@{/info}">info</a>
+                <a class="list-group-item" th:href="@{/env}">env</a>
+                <a class="list-group-item" th:href="@{/dump}">thread dump</a>
+                <a class="list-group-item" th:href="@{/metrics}">metrics</a>
+                <a class="list-group-item" th:href="@{/heapdump}">heapdump</a>
+                <a class="list-group-item" th:href="@{/trace}">trace</a>
+                <a class="list-group-item" th:href="@{/health}">health</a>
+                <a class="list-group-item" th:href="@{/swagger-ui.html}">swagger</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
+<script th:src="@{/webjars/tether/1.3.7/dist/js/tether.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+<script th:src="@{/webjars/angularjs/1.5.8/angular.js}"></script>
+<script th:src="@{search.js}"></script>
+</body>
+</html>

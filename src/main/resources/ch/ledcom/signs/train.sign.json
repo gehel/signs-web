@@ -1,0 +1,6 @@
+{
+  "_class": "ch.ledcom.signs.Sign",
+  "name": "train",
+  "description": "Locomotion",
+  "image": "999999"
+}

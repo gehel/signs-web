@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sd="http://www.thymeleaf.org/spring-data"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout">
+<head>
+    <title>Signs</title>
+</head>
+<body>
+    <div layout:fragment="content">
+
+        <div class="row">
+
+            <div th:each="sign : ${signs.content}" class="col-sm-3">
+                <a th:href="@{/sign/{name}(name=${sign.name})}">
+                <div class="thumbnail">
+                    <img th:src="@{/img/{color}(color=${sign.image})}" th:alt="${sign.name}" />
+                    <div class="caption">
+                        <h3 th:text="${sign.name}">Name</h3>
+                        <p th:text="${sign.description}">Some description</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <nav aria-label="Page navigation">
+                <ul class="pagination" sd:pagination="full">
+                    <!-- Pagination created by SpringDataDialect, this content is just for mockup -->
+                    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
