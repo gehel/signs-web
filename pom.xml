@@ -232,10 +232,10 @@
                                 heroku creates a bunch of directories in the
                                 project root, let's ignore all of them.
                             -->
-                            <exclude>.heroku</exclude>
-                            <exclude>.jdk</exclude>
-                            <exclude>.profile.d</exclude>
-                            <exclude>.m2</exclude>
+                            <exclude>.heroku/**</exclude>
+                            <exclude>.jdk/**</exclude>
+                            <exclude>.profile.d/**</exclude>
+                            <exclude>.m2/**</exclude>
                         </excludes>
                     </configuration>
                     <executions>
