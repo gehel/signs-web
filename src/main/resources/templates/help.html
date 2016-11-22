@@ -20,22 +20,22 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorator="layout">
 <head>
-    <title>Signs - Help</title>
+    <title th:text="#{app.title} + ' - ' + #{help}">Signs - Help</title>
 </head>
 <body>
 <div layout:fragment="content">
 
     <div class="row">
-        <h2>Description</h2>
-        <p>
+        <h2 th:text="#{help.description.title}">Description</h2>
+        <p th:text="#{help.description.text}">
             This application is work in progress. The content is there just as
             a proof of concept. The ultimate goal is to create a library of
             sign language signs, where anyone can search for signs, browse,
             view, download or integrate the content in any way they want.
         </p>
 
-        <h2>Search</h2>
-        <p>
+        <h2 th:text="#{help.search.title}">Search</h2>
+        <p th:utext="#{help.search.text(@{/},@{/(q=train)},@{/(q=train,format=json)},@{/(q=train,format=atom)})}">
             The <a th:href="@{/}">main page</a> can be used to search for any
             kind of sign with free form search. For example you can
             <a th:href="@{/(q=train)}">search for "train"</a>. By default, the
@@ -46,16 +46,16 @@
             adding the <code>format=atom</code> query parameter.
         </p>
 
-        <h2>Signs</h2>
-        <p>
+        <h2 th:text="#{help.signs.title}">Signs</h2>
+        <p th:utext="#{help.signs.text(@{/sign/train},@{/sign/train(format=json)})}">
             Each sign has a page where you can see all information about that
             sign. For example, the "train" has <a th:href="@{/sign/train}">its
             own page</a>. This can again be viewed as
             <a th:href="@{/sign/train(format=json)}">JSON</a>.
         </p>
 
-        <h2>Swagger UI</h2>
-        <p>
+        <h2 th:text="#{help.swagger.title}">Swagger UI</h2>
+        <p th:utext="#{help.swagger.text(@{/swagger-ui.html})}">
             A <a th:href="@{/swagger-ui.html}">Swagger endpoint</a> is
             available to browse the available API endpoints and help you get
             familiar with the kind of information available on this
