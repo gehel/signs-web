@@ -21,9 +21,9 @@
 	<Description>Search signs</Description>
 	<InputEncoding>UTF-8</InputEncoding>
 	<Url method="get" type="text/html"
-	     template="http://localhost/?q={searchTerms}"/>
+	     template="https://signs-web.herokuapp.com/?q={searchTerms}"/>
 	<Url method="get" type="application/atom+xml"
-	     template="http://localhost/?q={searchTerms}&amp;format=atom"/>
+	     template="https://signs-web.herokuapp.com/?q={searchTerms}&amp;format=atom"/>
 	<Url method="get" type="application/json"
-	     template="http://localhost/?q={searchTerms}&amp;format=json"/>
+	     template="https://signs-web.herokuapp.com/?q={searchTerms}&amp;format=json"/>
 </OpenSearchDescription>
