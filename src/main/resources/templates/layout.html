@@ -32,7 +32,11 @@
 <body>
 <div class="container">
     <div class="page-header">
-        <h1>Signs</h1>
+        <div class="pull-right" th:with="currentUrl=(${@currentUrlWithoutParam.apply('l')})">
+            <a th:text="en" th:href="@{${currentUrl}(l=en)}">en</a> |
+            <a th:text="fr" th:href="@{${currentUrl}(l=fr)}">fr</a>
+        </div>
+        <h1 th:text="#{app.title}">Signs</h1>
     </div>
 
     <div class="row">
@@ -41,15 +45,16 @@
 
             <div class="row">
 
-                <div class="col-sm-12">
+                <div class="col-sm-12 hidden-print">
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <form class="form-inline" th:action="@{/}" method="get">
                                 <div class="form-group">
                                     <input class="form-control" type="text" id="q" name="q"
+                                           th:placeholder="#{search.placeholder}"
                                            placeholder="Search for..." th:attr="value=${query}" />
                                 </div>
-                                <button type="submit" class="btn btn-default" th:text="Go"/>
+                                <button type="submit" class="btn btn-default" th:text="#{search.submit}" />
                             </form>
                         </div>
                     </div>
@@ -60,22 +65,22 @@
             </div>
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-sm-3 hidden-print">
             <h2>Categories</h2>
 
             <h2>Admin</h2>
             <div class="list-group">
-                <a class="list-group-item" th:href="@{/help}">help</a>
-                <a class="list-group-item" th:href="@{/configprops}">configprops</a>
-                <a class="list-group-item" th:href="@{/mappings}">mappings</a>
-                <a class="list-group-item" th:href="@{/info}">info</a>
-                <a class="list-group-item" th:href="@{/env}">env</a>
-                <a class="list-group-item" th:href="@{/dump}">thread dump</a>
-                <a class="list-group-item" th:href="@{/metrics}">metrics</a>
-                <a class="list-group-item" th:href="@{/heapdump}">heapdump</a>
-                <a class="list-group-item" th:href="@{/trace}">trace</a>
-                <a class="list-group-item" th:href="@{/health}">health</a>
-                <a class="list-group-item" th:href="@{/swagger-ui.html}">swagger</a>
+                <a class="list-group-item" th:href="@{/help}" th:text="#{help}">help</a>
+                <a class="list-group-item" th:href="@{/configprops}" th:text="#{admin.configprops}">configprops</a>
+                <a class="list-group-item" th:href="@{/mappings}" th:text="#{admin.mappings}">mappings</a>
+                <a class="list-group-item" th:href="@{/info}" th:text="#{admin.info}">info</a>
+                <a class="list-group-item" th:href="@{/env}" th:text="#{admin.env}">env</a>
+                <a class="list-group-item" th:href="@{/dump}" th:text="#{admin.thread.dump}">thread dump</a>
+                <a class="list-group-item" th:href="@{/metrics}" th:text="#{admin.metrics}">metrics</a>
+                <a class="list-group-item" th:href="@{/heapdump}" th:text="#{admin.heapdump}">heapdump</a>
+                <a class="list-group-item" th:href="@{/trace}" th:text="#{admin.trace}">trace</a>
+                <a class="list-group-item" th:href="@{/health}" th:text="#{admin.health}">health</a>
+                <a class="list-group-item" th:href="@{/swagger-ui.html}" th:text="#{admin.swagger}">swagger</a>
             </div>
         </div>
     </div>
