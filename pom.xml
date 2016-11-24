@@ -351,9 +351,9 @@
                             <branchRate>0</branchRate>
                             <lineRate>0</lineRate>
                             <totalBranchRate>0</totalBranchRate>
-                            <totalLineRate>30</totalLineRate>
+                            <totalLineRate>0</totalLineRate>
                             <packageBranchRate>0</packageBranchRate>
-                            <packageLineRate>30</packageLineRate>
+                            <packageLineRate>0</packageLineRate>
                         </check>
                     </configuration>
                     <executions>
