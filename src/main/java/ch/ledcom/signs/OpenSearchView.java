@@ -1,5 +1,5 @@
 /**
- * Copyright © ${project.inceptionYear} Guillaume Lederrey <guillaume.lederrey@gmail.com> (${email})
+ * Copyright © 2016 Guillaume Lederrey (guillaume.lederrey@gmail.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
