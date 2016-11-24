@@ -92,7 +92,7 @@ public class SignsApplication extends WebMvcConfigurerAdapter {
                 .mediaType("atom", MediaType.APPLICATION_ATOM_XML);
     }
 
-	public static void main(String[] args) {
-		SpringApplication.run(SignsApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SignsApplication.class, args);
+    }
 }
