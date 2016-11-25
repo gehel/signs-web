@@ -381,6 +381,7 @@
                     </configuration>
                     <executions>
                         <execution>
+                            <phase>process-resources</phase>
                             <goals>
                                 <goal>revision</goal>
                             </goals>
@@ -427,6 +428,11 @@
 
     <profiles>
         <profile>
+            <!--
+                Heroku removes the .git directory before launching Maven (I really don't know why). So let's re-create
+                it. There is probably a much simpler way to do this (not deleting the directory in the first place
+                would be nice).
+            -->
             <id>git-checkout</id>
             <activation>
                 <file>
@@ -444,7 +450,7 @@
                                 <goals>
                                     <goal>run</goal>
                                 </goals>
-                                <phase>process-resources</phase>
+                                <phase>generate-resources</phase>
                                 <configuration>
                                     <tasks>
                                         <copy todir="${basedir}/.git">
@@ -465,8 +471,13 @@
                                 <goals>
                                     <goal>exec</goal>
                                 </goals>
-                                <phase>generate-resources</phase>
+                                <phase>initialize</phase>
                                 <configuration>
+                                    <successCodes>
+                                        <successCode>0</successCode>
+                                        <!-- ignore failure if output directory already exists -->
+                                        <successCode>128</successCode>
+                                    </successCodes>
                                     <executable>git</executable>
                                     <arguments>
                                         <argument>clone</argument>
