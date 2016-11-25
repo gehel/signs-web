@@ -92,6 +92,17 @@
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-sm-12 hidden-print">
+            <div class="panel panel-default">
+                <div class="panel-body small">
+                    commit: <span th:text="${@gitProperties.getShortCommitId()}">123456</span>
+                    - date: <span th:text="${@gitProperties.getCommitTime()}">14/12/2016</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
 <script th:src="@{/webjars/tether/1.3.7/dist/js/tether.min.js}"></script>
