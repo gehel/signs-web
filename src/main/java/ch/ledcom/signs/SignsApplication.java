@@ -16,6 +16,8 @@
 package ch.ledcom.signs;
 
 import nz.net.ultraq.thymeleaf.LayoutDialect;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -41,12 +43,15 @@ import static java.util.Locale.ENGLISH;
 @EnableSwagger2
 public class SignsApplication extends WebMvcConfigurerAdapter {
 
+    private final Logger logger = LoggerFactory.getLogger(getClass());
+
     @Bean
     public Jackson2RepositoryPopulatorFactoryBean repositoryPopulator() {
         Resource[] data;
         try {
             data = new PathMatchingResourcePatternResolver().getResources("classpath:ch/ledcom/signs/*.sign.json");
-        } catch (IOException e) {
+        } catch (IOException ioe) {
+            logger.debug("Could not load classpath:ch/ledcom/signs/*.sign.json", ioe);
             data = new Resource[] { new ClassPathResource("ch/ledcom/signs/data.json") };
         }
 
@@ -92,6 +97,7 @@ public class SignsApplication extends WebMvcConfigurerAdapter {
                 .mediaType("atom", MediaType.APPLICATION_ATOM_XML);
     }
 
+    @SuppressWarnings("squid:S2095")
     public static void main(String[] args) {
         SpringApplication.run(SignsApplication.class, args);
     }
