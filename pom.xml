@@ -381,10 +381,10 @@
                     </configuration>
                     <executions>
                         <execution>
-                            <phase>process-resources</phase>
                             <goals>
                                 <goal>revision</goal>
                             </goals>
+                            <phase>process-resources</phase>
                         </execution>
                     </executions>
                 </plugin>
