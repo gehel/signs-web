@@ -49,7 +49,7 @@ public class SignsApplication extends WebMvcConfigurerAdapter {
     public Jackson2RepositoryPopulatorFactoryBean repositoryPopulator() {
         Resource[] data;
         try {
-            data = new PathMatchingResourcePatternResolver().getResources("classpath:ch/ledcom/signs/*.sign.json");
+            data = new PathMatchingResourcePatternResolver().getResources("classpath*:ch/ledcom/signs/*.sign.json");
         } catch (IOException ioe) {
             logger.debug("Could not load classpath:ch/ledcom/signs/*.sign.json", ioe);
             data = new Resource[] { new ClassPathResource("ch/ledcom/signs/data.json") };
