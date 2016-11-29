@@ -1,0 +1,6 @@
+{
+  "_class": "ch.ledcom.signs.Sign",
+  "name": "bière",
+  "description": "Boisson alcoolique fabriquée à partir des parties glucidiques de végétaux, et d’eau, et soumise à fermentation.",
+  "image": "biere.svg"
+}

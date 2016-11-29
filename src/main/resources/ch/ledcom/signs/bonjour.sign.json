@@ -1,0 +1,6 @@
+{
+  "_class": "ch.ledcom.signs.Sign",
+  "name": "bonjour",
+  "description": "Formule de politesse amicale ou formelle et souvent mot d’introduction lors d’une rencontre. Il permet de saluer. Selon le moment de la journée, on utilisera bonjour ou bonsoir.",
+  "image": "bonjour.svg"
+}

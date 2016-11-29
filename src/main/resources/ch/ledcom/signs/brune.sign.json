@@ -1,0 +1,6 @@
+{
+  "_class": "ch.ledcom.signs.Sign",
+  "name": "bonjour",
+  "description": "Femme au cheveux bruns.",
+  "image": "brune.svg"
+}

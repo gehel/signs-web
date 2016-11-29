@@ -28,6 +28,7 @@ import org.springframework.data.repository.init.Jackson2RepositoryPopulatorFacto
 import org.springframework.http.MediaType;
 import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
@@ -78,6 +79,12 @@ public class SignsApplication extends WebMvcConfigurerAdapter {
         clr.setDefaultLocale(ENGLISH);
         clr.setCookieName("l");
         return clr;
+    }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/svg/**.svg")
+                .addResourceLocations("classpath:/ch/ledcom/signs/");
     }
 
     @Override

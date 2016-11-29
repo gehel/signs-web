@@ -1,0 +1,6 @@
+{
+	"_class": "ch.ledcom.signs.Sign",
+	"name": "non",
+	"description": "Mot utilisé pour apporter une réponse négative. Il marque le désaccord sur une question affirmative et l’accord sur une question négative.",
+	"image": "non.svg"
+}

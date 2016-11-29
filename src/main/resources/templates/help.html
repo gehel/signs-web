@@ -35,23 +35,23 @@
         </p>
 
         <h2 th:text="#{help.search.title}">Search</h2>
-        <p th:utext="#{help.search.text(@{/},@{/(q=train)},@{/(q=train,format=json)},@{/(q=train,format=atom)})}">
+        <p th:utext="#{help.search.text(@{/},@{/(q=bonjour)},@{/(q=bonjour,format=json)},@{/(q=bonjour,format=atom)})}">
             The <a th:href="@{/}">main page</a> can be used to search for any
             kind of sign with free form search. For example you can
-            <a th:href="@{/(q=train)}">search for "train"</a>. By default, the
+            <a th:href="@{/(q=bonjour)}">search for "bonjour"</a>. By default, the
             results are shown as an HTML page. The same results can be
-            retrieved as <a th:href="@{/(q=train,format=json)}">JSON</a> by
+            retrieved as <a th:href="@{/(q=bonjour,format=json)}">JSON</a> by
             adding the <code>format=json</code> query parameter or as
-            <a th:href="@{/(q=train,format=atom)}">Atom / OpenSearch</a> by
+            <a th:href="@{/(q=bonjour,format=atom)}">Atom / OpenSearch</a> by
             adding the <code>format=atom</code> query parameter.
         </p>
 
         <h2 th:text="#{help.signs.title}">Signs</h2>
-        <p th:utext="#{help.signs.text(@{/sign/train},@{/sign/train(format=json)})}">
+        <p th:utext="#{help.signs.text(@{/sign/bonjour},@{/sign/bonjour(format=json)})}">
             Each sign has a page where you can see all information about that
-            sign. For example, the "train" has <a th:href="@{/sign/train}">its
+            sign. For example, the "bonjour" has <a th:href="@{/sign/bonjour}">its
             own page</a>. This can again be viewed as
-            <a th:href="@{/sign/train(format=json)}">JSON</a>.
+            <a th:href="@{/sign/bonjour(format=json)}">JSON</a>.
         </p>
 
         <h2 th:text="#{help.swagger.title}">Swagger UI</h2>

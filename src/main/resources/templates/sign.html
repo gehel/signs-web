@@ -27,7 +27,7 @@
 
     <div class="row">
         <div class="col-sm-12">
-            <img class="img-thumbnail" th:src="@{/img/{color}(color=${sign.image})}" th:alt="${sign.name}"/>
+            <img class="img-thumbnail" th:src="@{/svg/{image}(image=${sign.image})}" th:alt="${sign.name}"/>
             <h2 th:text="${sign.name}">Name</h2>
             <div th:text="${sign.description}">Description</div>
         </div>

@@ -1,0 +1,6 @@
+{
+  "_class": "ch.ledcom.signs.Sign",
+  "name": "content",
+  "description": "Satisfait, heureux.",
+  "image": "content.svg"
+}

@@ -1,0 +1,6 @@
+{
+  "_class": "ch.ledcom.signs.Sign",
+  "name": "vin",
+  "description": "Boisson alcoolique obtenue par fermentation du jus de raisin et connue depuis plusieurs millénaires.",
+  "image": "vin.svg"
+}
