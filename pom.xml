@@ -27,7 +27,7 @@
   </parent>
 
   <groupId>ch.ledcom.signs</groupId>
-  <artifactId>signs</artifactId>
+  <artifactId>signs-web</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
