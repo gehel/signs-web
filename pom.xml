@@ -52,20 +52,20 @@
   </licenses>
 
   <scm>
-    <connection>scm:git:git@github.com:gehel/signs.git</connection>
-    <developerConnection>scm:git:git@github.com:gehel/signs.git</developerConnection>
+    <connection>scm:git:git@github.com:gehel/signs-web.git</connection>
+    <developerConnection>scm:git:git@github.com:gehel/signs-web.git</developerConnection>
     <tag>HEAD</tag>
-    <url>git@github.com:gehel/signs.git</url>
+    <url>git@github.com:gehel/signs-web.git</url>
   </scm>
 
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/gehel/signs/issues</url>
+    <url>https://github.com/gehel/signs-web/issues</url>
   </issueManagement>
 
   <ciManagement>
     <system>travis</system>
-    <url>https://travis-ci.org/gehel/signs</url>
+    <url>https://travis-ci.org/gehel/signs-web</url>
   </ciManagement>
 
   <properties>
@@ -506,7 +506,7 @@
                   <arguments>
                     <argument>clone</argument>
                     <argument>-n</argument>
-                    <argument>https://github.com/gehel/signs.git</argument>
+                    <argument>https://github.com/gehel/signs-web.git</argument>
                     <argument>${project.build.directory}/checkout</argument>
                   </arguments>
                 </configuration>
