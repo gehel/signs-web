@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /help
+Disallow: /configprops
+Disallow: /mappings
+Disallow: /info
+Disallow: /env
+Disallow: /dump
+Disallow: /metrics
+Disallow: /heapdump
+Disallow: /trace
+Disallow: /health
+Disallow: /swagger-ui.html
