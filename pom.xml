@@ -280,6 +280,7 @@
               <exclude>mvnw.cmd</exclude>
               <exclude>mvnw</exclude>
               <excldue>data/**</excldue>
+              <exclude>src/main/resources/static/robots.txt</exclude>
               <!--
                                 heroku creates a bunch of directories in the
                                 project root, let's ignore all of them.
