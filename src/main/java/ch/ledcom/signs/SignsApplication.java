@@ -25,7 +25,6 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.data.repository.init.Jackson2RepositoryPopulatorFactoryBean;
-import org.springframework.http.MediaType;
 import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -39,6 +38,9 @@ import java.io.IOException;
 import java.util.function.Function;
 
 import static java.util.Locale.ENGLISH;
+import static org.springframework.http.MediaType.APPLICATION_ATOM_XML;
+import static org.springframework.http.MediaType.TEXT_HTML;
+import static org.springframework.http.MediaType.parseMediaType;
 
 @SpringBootApplication
 @EnableSwagger2
@@ -99,9 +101,10 @@ public class SignsApplication extends WebMvcConfigurerAdapter {
 
     @Override
     public void configureContentNegotiation(ContentNegotiationConfigurer configurer) {
-        configurer.defaultContentType(MediaType.TEXT_HTML)
+        configurer.defaultContentType(TEXT_HTML)
                 .favorParameter(true)
-                .mediaType("atom", MediaType.APPLICATION_ATOM_XML);
+                .mediaType("atom", APPLICATION_ATOM_XML)
+                .mediaType("epub", parseMediaType(com.google.common.net.MediaType.EPUB.toString()));
     }
 
     @SuppressWarnings("squid:S2095")

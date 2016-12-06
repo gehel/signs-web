@@ -26,6 +26,23 @@
 <body>
     <div layout:fragment="content">
 
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <span th:text="#{search.view.as}">View as:</span>
+                        <ul class="list-inline" th:with="currentUrlNoFormat=(${@currentUrlWithoutParam.apply('format')})">
+                            <li th:with="currentUrlNoSize=(${@currentUrlWithoutParam.apply('size')})">
+                                <a th:text="#{ebook}" th:href="@{${currentUrlNoSize}(size=0,format=epub)}">E-Book</a>
+                            </li>
+                            <li><a th:text="#{atom}" th:href="@{${currentUrlNoFormat}(format=atom)}">Atom (XML)</a></li>
+                            <li><a th:text="#{json}" th:href="@{${currentUrlNoFormat}(format=json)}">JSON</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="search-results" class="row">
 
             <div th:each="sign : ${signs.content}" class="col-sm-3">

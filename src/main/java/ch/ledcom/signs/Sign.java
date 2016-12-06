@@ -15,10 +15,13 @@
  */
 package ch.ledcom.signs;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
+
+import java.io.InputStream;
 
 import static org.springframework.data.elasticsearch.annotations.FieldIndex.analyzed;
 
@@ -30,4 +33,8 @@ public class Sign {
     @Field(index = analyzed) private final String description;
     private final String image;
 
+    @JsonIgnore
+    public InputStream getImageInputStream() {
+        return Sign.class.getResourceAsStream(image);
+    }
 }
