@@ -22,6 +22,7 @@ import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 
 import java.io.InputStream;
+import java.util.List;
 
 import static org.springframework.data.elasticsearch.annotations.FieldIndex.analyzed;
 
@@ -31,7 +32,9 @@ public class Sign {
 
     @Id private final String name;
     @Field(index = analyzed) private final String description;
+    @Field(index = analyzed) private final String definition;
     private final String image;
+    @Field(index = analyzed) private final List<String> tags;
 
     @JsonIgnore
     public InputStream getImageInputStream() {

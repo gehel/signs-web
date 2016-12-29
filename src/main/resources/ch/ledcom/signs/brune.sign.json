@@ -1,6 +1,8 @@
 {
   "_class": "ch.ledcom.signs.Sign",
   "name": "brune",
-  "description": "Femme au cheveux bruns.",
-  "image": "brune.svg"
+  "definition": "Femme au cheveux bruns.",
+  "description": "Faire des trucs avec les mains.",
+  "image": "brune.svg",
+  "tags": ["couleur", "cheveux"]
 }

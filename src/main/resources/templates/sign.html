@@ -29,7 +29,11 @@
         <div class="col-sm-12">
             <img class="img-thumbnail" th:src="@{/svg/{image}(image=${sign.image})}" th:alt="${sign.name}"/>
             <h2 th:text="${sign.name}">Name</h2>
+            <div th:text="${sign.definition}">Definition</div>
             <div th:text="${sign.description}">Description</div>
+            <ul th:each="tag : ${sign.tags}">
+                <li><a th:text="${tag}" th:href="@{/tag/{id}(id=${tag})}">Tag</a></li>
+            </ul>
         </div>
     </div>
 
