@@ -101,9 +101,9 @@ public class ValidSvgTests {
     }
 
     @Test
-    public void svgFilenameOnlyContainsLowerCaseLetters() throws IOException {
+    public void svgFilenameOnlyContainsLowerCaseLettersAndOrNumbers() throws IOException {
         for (Resource r : svgs()) {
-            assertThat(r.getFilename()).matches("[a-z-]*\\.svg");
+            assertThat(r.getFilename()).matches("[a-z-0-9-]*\\.svg");
         }
     }
 
