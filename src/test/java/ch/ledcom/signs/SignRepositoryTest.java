@@ -35,7 +35,7 @@ public class SignRepositoryTest {
 
     @Test
     public void storeSignsInElasticsearch() {
-        signRepository.save(new Sign("hello", "make stuff with hands", "a greeting", "test-doc.svg", singletonList("tag")));
+        signRepository.save(new Sign("hello", "make stuff with hands", "a greeting", "test-doc.svg", "test-doc.svg", "test-doc.svg", singletonList("tag")));
         Sign hello = signRepository.findByName("hello");
 
         assertThat(hello.getName()).isEqualTo("hello");

@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="105mm"
-   height="148mm"
-   viewBox="0 0 372.04724 524.40944"
+   width="110mm"
+   height="130mm"
+   viewBox="0 0 389.76377 460.62991"
    id="svg5346"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="Content.svg">
+   sodipodi:docname="content.svg">
   <defs
      id="defs5348" />
   <sodipodi:namedview
@@ -26,16 +26,20 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="-86.783093"
-     inkscape:cy="265.39791"
+     inkscape:cx="-219.86276"
+     inkscape:cy="134.51408"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1680"
-     inkscape:window-height="1022"
+     inkscape:window-width="1366"
+     inkscape:window-height="692"
      inkscape:window-x="0"
-     inkscape:window-y="28"
-     inkscape:window-maximized="1" />
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata5351">
     <rdf:RDF>
@@ -44,18 +48,18 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
         <cc:license
-                rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
       </cc:Work>
       <cc:License
-              rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
         <cc:permits
-                rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
-                rdf:resource="http://creativecommons.org/ns#Distribution"/>
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
         <cc:permits
-                rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
       </cc:License>
     </rdf:RDF>
   </metadata>
@@ -63,10 +67,10 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-527.95276)">
+     transform="translate(-32.365382,-460.84847)">
     <g
        id="g5970"
-       transform="translate(6.5282486,0)">
+       transform="translate(64.180455,-39.114344)">
       <g
          id="g4224"
          style="opacity:1;fill:#fff5f0;fill-opacity:1"
@@ -278,78 +282,15 @@
            id="tspan5005"
            sodipodi:role="line">X 2</tspan></text>
     </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="24.326778"
-       y="1024.2549"
-       id="text5984"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan5986"
-         x="24.326778"
-         y="1024.2549"
-         style="font-size:25px">Configurations : </tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot6111"
-       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
          id="flowRegion6113"><rect
            id="rect6115"
            width="150.71428"
            height="140"
            x="232.14285"
            y="410.12372" /></flowRegion><flowPara
-         id="flowPara6117" /></flowRoot>    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="315.96121"
-       y="1034.4396"
-       id="text6291"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan6293"
-         x="315.96121"
-         y="1034.4396">D</tspan></text>
-    <g
-       id="g4414"
-       transform="translate(-429.03184,264.51119)">
-      <path
-         sodipodi:nodetypes="cccc"
-         inkscape:connector-curvature="0"
-         id="path4325"
-         d="m 747.44225,725.77872 c 0.0694,-2.88613 -0.15987,-3.6087 -0.15795,-5.54756 -7.05165,-6.22457 -7.80769,-14.00475 -6.89562,-27.66673 0.79613,-15.05529 -1.6169,-30.94497 6.78571,-24.73214"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path4327"
-         d="m 748.06725,689.618 c 0.52294,-15.65042 -3.54069,-33.56008 6.78572,-27.49999"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         sodipodi:nodetypes="ccc"
-         inkscape:connector-curvature="0"
-         id="path4329"
-         d="m 755.92439,688.72515 c -0.0873,-9.3713 -1.14169,-19.17536 -0.95512,-26.73457 0.0973,-6.9342 4.56056,-5.90927 7.3837,-1.12258"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         sodipodi:nodetypes="cccc"
-         inkscape:connector-curvature="0"
-         id="path4333"
-         d="m 763.96011,687.02872 c -10e-4,-10.43768 -1.88363,-17.96207 -1.43967,-26.37426 10.00297,-5.36423 7.85048,18.67571 10.13705,28.23295 1.54945,4.96491 0.75634,12.61525 1.92762,16.26631"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         sodipodi:nodetypes="cccc"
-         inkscape:connector-curvature="0"
-         id="path4335"
-         d="m 771.28154,710.51086 c 0.0385,-6.36924 25.41641,-17.64557 23.61075,-6.77865 -13.77575,5.61453 -11.20541,8.51406 -26.87505,17.97522 -0.0437,1.02594 -0.0472,2.02156 0.13976,4.607"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path4337"
-         d="m 755.38868,717.56443 c 1.35912,-6.60035 4.96934,-10.9926 9.73215,-15.44643"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    </g>
-  </g>
+         id="flowPara6117" /></flowRoot>  </g>
 </svg>

@@ -4,5 +4,6 @@
   "definition": "Femme au cheveux bruns.",
   "description": "Faire des trucs avec les mains.",
   "image": "brune.svg",
+  "configRight": "config-1.svg",
   "tags": ["couleur", "cheveux"]
 }

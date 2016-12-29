@@ -10,13 +10,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="105mm"
-   height="148mm"
-   viewBox="0 0 372.04724 524.40945"
+   width="110mm"
+   height="130mm"
+   viewBox="0 0 389.76381 460.62992"
    id="svg6324"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="Signer.svg">
+   sodipodi:docname="signer.svg">
   <defs
      id="defs6326">
     <linearGradient
@@ -59,16 +59,20 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="288.09196"
-     inkscape:cy="185.07973"
+     inkscape:cx="28.911856"
+     inkscape:cy="220.08899"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1535"
-     inkscape:window-height="876"
-     inkscape:window-x="65"
+     inkscape:window-width="1366"
+     inkscape:window-height="692"
+     inkscape:window-x="0"
      inkscape:window-y="24"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata6329">
     <rdf:RDF>
@@ -87,13 +91,13 @@
         </dc:creator>
       </cc:Work>
       <cc:License
-              rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
         <cc:permits
-                rdf:resource="http://creativecommons.org/ns#Reproduction" />
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
-                rdf:resource="http://creativecommons.org/ns#Distribution" />
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
         <cc:permits
-                rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
       </cc:License>
     </rdf:RDF>
   </metadata>
@@ -101,9 +105,10 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-527.95276)">
+     transform="translate(-5.1267407,-424.71103)">
     <g
-       id="g7039">
+       id="g7039"
+       transform="translate(13.985043,-58.27537)">
       <path
          sodipodi:nodetypes="ccccccccccccc"
          inkscape:connector-curvature="0"
@@ -344,77 +349,6 @@
            x="284.39377"
            y="673.40607"
            style="fill:url(#linearGradient5035);fill-opacity:1">X 2</tspan></text>
-    </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="24.326778"
-       y="1014.9692"
-       id="text5984"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan5986"
-         x="24.326778"
-         y="1014.9692"
-         style="font-size:25px">Configurations : </tspan></text>
-    <g
-       id="g7286"
-       transform="translate(0,2.5253296)">
-      <text
-         sodipodi:linespacing="125%"
-         id="text6287"
-         y="1020.1074"
-         x="248.62318"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="1020.1074"
-           x="248.62318"
-           id="tspan6289"
-           sodipodi:role="line">G</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text6291"
-         y="1020.1269"
-         x="316.38965"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="1020.1269"
-           x="316.38965"
-           id="tspan6293"
-           sodipodi:role="line">D</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text7282"
-         y="1018.0859"
-         x="281.56891"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="1018.0859"
-           x="281.56891"
-           id="tspan7284"
-           sodipodi:role="line">+</tspan></text>
-    </g>
-    <g
-       id="g4409"
-       transform="translate(-383.72788,255.6475)">
-      <path
-         sodipodi:nodetypes="cccccccccccc"
-         inkscape:connector-curvature="0"
-         id="path4319"
-         d="m 670.56725,723.54658 c 0.0399,-2.65832 -0.13518,-4.37764 -0.19233,-6.42064 -3.89644,-3.918 -7.13924,-7.26682 -6.8955,-25.05913 -2.82134,-6.75431 -13.02682,-17.65428 -9.4187,-21.71439 3.69431,-4.47699 12.96541,17.44246 15.73315,17.23931 -1.23565,-7.11541 -9.54681,-25.90453 -4.0932,-28.058 6.51803,-1.62818 8.84077,23.09151 13.4714,27.55006 1.82249,-4.43916 -5.96855,-29.028 1.9309,-30.41222 7.77146,-0.086 3.58244,23.86848 7.15038,29.61974 3.53613,-5.64455 3.87628,-25.26525 9.65682,-23.98159 6.18211,1.36054 -1.33319,16.82264 -0.64649,22.219 0.18435,2.18095 -0.94511,16.85976 0.26787,19.28572"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         sodipodi:nodetypes="cccc"
-         inkscape:connector-curvature="0"
-         id="path4321"
-         d="m 695.03154,706.13586 c 6.32061,-4.46489 21.59176,-12.23381 23.75,-3.39285 -17.59273,7.64164 -15.75571,10.37047 -28.09947,16.55854 -0.69129,1.56885 0.0586,3.34859 -0.47196,4.95931"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path4323"
-         d="m 680.38868,710.68943 c 0.20561,-5.67281 4.12204,-9.42904 9.46429,-8.75"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
   </g>
 </svg>

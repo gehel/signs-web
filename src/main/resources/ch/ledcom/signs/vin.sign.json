@@ -4,5 +4,6 @@
   "definition": "Boisson alcoolique obtenue par fermentation du jus de raisin et connue depuis plusieurs millénaires.",
   "description": "Faire des trucs avec les mains.",
   "image": "vin.svg",
+  "configRight": "config-4.svg",
   "tags": ["boisson", "alcool", "raisin"]
 }

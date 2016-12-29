@@ -34,6 +34,8 @@ public class Sign {
     @Field(index = analyzed) private final String description;
     @Field(index = analyzed) private final String definition;
     private final String image;
+    private final String configLeft;
+    private final String configRight;
     @Field(index = analyzed) private final List<String> tags;
 
     @JsonIgnore

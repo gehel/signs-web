@@ -4,5 +4,7 @@
   "definition": "Communiquer en langue des signes.",
   "description": "Faire des trucs avec les mains.",
   "image": "signer.svg",
+  "configRight": "config-6.svg",
+  "configLeft": "config-6.svg",
   "tags": ["verbe", "action"]
 }
