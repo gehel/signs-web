@@ -71,7 +71,7 @@ public class OpenSearchView extends AbstractAtomFeedView {
             entry.setTitle(sign.getName());
             entry.setPublished(new Date());
             Content summary = new Content();
-            summary.setValue(sign.getDescription());
+            summary.setValue(sign.getDefinition());
             entry.setSummary(summary);
             entries.add(entry);
         }
