@@ -57,6 +57,16 @@ public class SignController {
         return "search";
     }
 
+    @RequestMapping(method = GET, path = "/tag/{name}")
+    public String searchByTags(
+            @PathVariable("name") String tag,
+            Model model,
+            @PageableDefault(size = 8) Pageable pageable) {
+        model.addAttribute("tag", tag);
+        model.addAttribute("signs", signRepository.findByTags(tag, pageable));
+        return "search";
+    }
+
     @ResponseBody
     @RequestMapping(method = GET, produces = APPLICATION_JSON_VALUE)
     public Page<Sign> searchAPI(
@@ -64,6 +74,14 @@ public class SignController {
             Pageable pageable) {
         if (isNullOrEmpty(query)) return signRepository.findAll(pageable);
         return signRepository.findByAllFields(query, pageable);
+    }
+
+    @ResponseBody
+    @RequestMapping(method = GET, produces = APPLICATION_JSON_VALUE, path = "/tag/{name}")
+    public Page<Sign> searchbyTagsAPI(
+            @PathVariable("name") String tag,
+            Pageable pageable) {
+        return signRepository.findByTags(tag, pageable);
     }
 
     @RequestMapping(path = "/sign/{name}", method = GET)

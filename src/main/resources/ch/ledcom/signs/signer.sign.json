@@ -1,6 +1,8 @@
 {
   "_class": "ch.ledcom.signs.Sign",
   "name": "signer",
-  "description": "Communiquer en langue des signes.",
-  "image": "signer.svg"
+  "definition": "Communiquer en langue des signes.",
+  "description": "Faire des trucs avec les mains.",
+  "image": "signer.svg",
+  "tags": ["verbe", "action"]
 }

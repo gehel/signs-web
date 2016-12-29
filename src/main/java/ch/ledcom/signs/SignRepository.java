@@ -25,6 +25,7 @@ public interface SignRepository extends ElasticsearchCrudRepository<Sign, String
     Sign findByName(String name);
 
     Page<Sign> findByDescription(String description, Pageable pageable);
+    Page<Sign> findByTags(String tag, Pageable pageable);
 
     @Query("{ \"match\" : {\"_all\" : \"?0\"}}")
     Page<Sign> findByAllFields(String query, Pageable pageable);

@@ -1,6 +1,8 @@
 {
   "_class": "ch.ledcom.signs.Sign",
   "name": "content",
-  "description": "Satisfait, heureux.",
-  "image": "content.svg"
+  "definition": "Satisfait, heureux.",
+  "description": "Faire des trucs avec les mains.",
+  "image": "content.svg",
+  "tags": ["humeur"]
 }

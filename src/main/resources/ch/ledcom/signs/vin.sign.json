@@ -1,6 +1,8 @@
 {
   "_class": "ch.ledcom.signs.Sign",
   "name": "vin",
-  "description": "Boisson alcoolique obtenue par fermentation du jus de raisin et connue depuis plusieurs millénaires.",
-  "image": "vin.svg"
+  "definition": "Boisson alcoolique obtenue par fermentation du jus de raisin et connue depuis plusieurs millénaires.",
+  "description": "Faire des trucs avec les mains.",
+  "image": "vin.svg",
+  "tags": ["boisson", "alcool", "raisin"]
 }
