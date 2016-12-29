@@ -4,5 +4,6 @@
   "definition": "Formule de politesse amicale ou formelle et souvent mot d’introduction lors d’une rencontre. Il permet de saluer. Selon le moment de la journée, on utilisera bonjour ou bonsoir.",
   "description": "Faire des trucs avec les mains",
   "image": "bonjour.svg",
+  "configRight": "config-3.svg",
   "tags": ["salutation", "politesse"]
 }

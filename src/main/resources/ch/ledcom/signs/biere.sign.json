@@ -4,5 +4,7 @@
   "definition": "Boisson alcoolique fabriquée à partir des parties glucidiques de végétaux, et d’eau, et soumise à fermentation.",
   "description": "Faire des trucs avec les mains",
   "image": "biere.svg",
+  "configRight": "config-1.svg",
+  "configLeft": "config-2.svg",
   "tags": ["boisson", "alcool", "malt"]
 }

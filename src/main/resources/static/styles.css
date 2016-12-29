@@ -17,3 +17,7 @@
 #search-results .thumbnail {
     height: 35em;
 }
+img.sign-configuration {
+    height: 2em;
+    width: 2em;
+}

@@ -29,6 +29,15 @@
         <div class="col-sm-12">
             <img class="img-thumbnail" th:src="@{/svg/{image}(image=${sign.image})}" th:alt="${sign.name}"/>
             <h2 th:text="${sign.name}">Name</h2>
+            <h4 th:text="#{configuration}">Configuration</h4>
+            <span th:if="${sign.configLeft}">
+            <span th:text="#{left.short}">L</span>:
+            <img class="sign-configuration" th:src="@{/svg/{image}(image=${sign.configLeft})}"/>
+            </span>
+            <span th:if="${sign.configRight}">
+            <span th:text="#{right.short}">R</span>:
+            <img class="sign-configuration" th:src="@{/svg/{image}(image=${sign.configRight})}"/>
+            </span>
             <h4 th:text="#{definition}">Definition</h4>
             <div th:text="${sign.definition}">Definition</div>
             <h4 th:text="#{description}">Description</h4>

@@ -4,5 +4,6 @@
   "definition": "Satisfait, heureux.",
   "description": "Faire des trucs avec les mains.",
   "image": "content.svg",
+  "configRight": "config-3.svg",
   "tags": ["humeur"]
 }

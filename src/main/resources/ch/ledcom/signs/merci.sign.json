@@ -1,0 +1,9 @@
+{
+  "_class": "ch.ledcom.signs.Sign",
+  "name": "merci",
+  "definition": "Formule de politesse pour remercier, pour rendre grâce, en réponse à un service, une proposition, un compliment ou un souhait. Il exprime autant la reconnaissance, que l’acceptation.",
+  "description": "Faire des trucs avec les mains",
+  "image": "bonjour.svg",
+  "configRight": "config-3.svg",
+  "tags": ["politesse"]
+}
